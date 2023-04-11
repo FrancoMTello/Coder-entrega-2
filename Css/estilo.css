@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;}
+
+
+
+header{
+    display:flex;
+    background-color:rgba(230, 2, 2, 0.815);
+    color: white;
+    padding: 0px 100px;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+header nav ul {
+    display: flex;
+    width: 80%;
+    list-style-type: none;
+    justify-content: space-evenly;
+    text-align: right;
+    font-size: 20px;
+    padding-top: 1em;
+    color:black
+}
+
+
+
+main {
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+
+.main_div{
+    display: flex;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    flex-direction:row;
+    text-align: center;
+    flex-flow:row;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+
+
+.main_div_span{
+    display: block;
+    background-color: rgba(39, 38, 38, 0.384);
+    font-size: 200%;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+    align-items: center;
+}
+
+.main_div_p{
+    display: flex;
+    padding-bottom: 1em;
+    padding-left:1em;
+    padding-top:5%;
+    background-color: rgb(211, 211, 211);
+    width: 50%;
+    text-align: center;
+}
+
+.main_section_span{
+    display:block;
+    font-size: 30px;
+    width: 100%;
+    background-color: rgba(39, 38, 38, 0.384);
+    text-align: center;
+    margin: 15px;
+    padding: 10px;
+    font-weight: bold;
+}
+main section article h2{
+    font-size: 30;
+    font-weight: bold;
+    background-color: rgb(143, 22, 22);
+    text-align: left;
+    margin:20px;
+    color:white
+}
+main section article h3{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin:20px;
+
+}
+main section article p{
+    font-size: 15px;
+    text-align: left;
+    margin-left: 55px;
+    margin-right: 55px;
+}
+body footer{
+    margin: 15px;
+    background-color:rgba(230, 2, 2, 0.815);
+    padding: 5px;
+}
+
+.destacado{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    padding-left:0px;
+    padding-top:30px;
+    padding-right: 0px;
+    background-color: white
+}
+.imagen{
+    display: flex;
+    padding-top: 10px;
+}
+.sobre_nosotros{
+    display:flex ;
+    padding-top: 20px;
+    padding-left: 15px;
+    background-color: rgba(117, 117, 117, 0.678);
+    color:white
+}
+@media (max-width: 576px){
+    header{
+        flex-wrap: wrap;
+        padding: 0px 0px;
+    }
+
+    /*MENU HAMBURGUESA*/
+    header label{
+        width: 40%;
+        text-align: end;
+        display: block;
+    }
+    header label i{
+        color: rgb(255, 255, 255);
+        font-size: 1px;
+    }
+    header nav ul{
+        /* display: none; */
+        transform: translateX(40%);
+        transition: 2s;
+        position: absolute;
+        background-color:rgba(230, 2, 2, 0.815);
+        justify-content: flex-start;
+        font-size: 15px;
+        left: 0;
+        top: 2%;
+        width: 100%;
+        height: 10vh;
+    }
+    .inputMenu:checked + nav {
+        transform: translateX(0);
+    }
+    .mainMenu{
+        display: block;
+    }
+    .mainMenu li a {
+        font-size: 20px;
+}
+}
